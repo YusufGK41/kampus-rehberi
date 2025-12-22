@@ -10,15 +10,35 @@ export default function YurtSayfasi({ navigation }: any) {
         <Text style={styles.pageTitle}>🏠 Yurt Bilgileri</Text>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>KYK Erdemli Erkek Öğrenci Yurdu</Text>
-          <Text style={styles.infoText}>📍 Mesafe: 2.5 km</Text>
-          <Text style={styles.infoText}>📞 Telefon: 0324 XXX XX XX</Text>
+          <Text style={styles.infoTitle}>KYK Erdemli Kızkalesi Yurdu</Text>
+          <Text style={styles.infoText}>
+            📍 Adres: Akdeniz Mahallesi Erenler Sokak No:60/A Erdemli/Mersin
+          </Text>
+          <Text style={styles.infoText}>📞 Telefon: 0324 515 22 48</Text>
+          <Text style={styles.infoText}>📏 Yüksekokuldan Uzaklık: 3.2 km</Text>
+          <Text style={styles.infoText}>
+            💰 Aylık Ücret: 1.000 TL (2025-26)
+          </Text>
         </View>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>KYK Erdemli Kız Öğrenci Yurdu</Text>
-          <Text style={styles.infoText}>📍 Mesafe: 3 km</Text>
-          <Text style={styles.infoText}>📞 Telefon: 0324 XXX XX XX</Text>
+          <Text style={styles.infoTitle}>Oda Özellikleri</Text>
+          <Text style={styles.infoText}>• 4 kişilik odalar</Text>
+          <Text style={styles.infoText}>• Çalışma masası</Text>
+          <Text style={styles.infoText}>• Tuvalet ve banyo</Text>
+          <Text style={styles.infoText}>• Mini buzdolabı</Text>
+          <Text style={styles.infoText}>• Komidin ve elbise dolabı</Text>
+        </View>
+
+        <View style={styles.infoCard}>
+          <Text style={styles.infoTitle}>Başvuru</Text>
+          <Text style={styles.infoText}>
+            Başvurular e-devlet üzerinden yapılmaktadır.
+          </Text>
+          <Text style={styles.infoText}>
+            {'\n'}Yurda yerleşemeyen öğrenciler yurt müdürlüğü ile iletişime
+            geçebilir.
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>

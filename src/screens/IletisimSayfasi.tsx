@@ -10,21 +10,33 @@ export default function IletisimSayfasi({ navigation }: any) {
         <Text style={styles.pageTitle}>📞 İletişim</Text>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>Öğrenci İşleri</Text>
-          <Text style={styles.infoText}>📞 0324 521 00 01</Text>
-          <Text style={styles.infoText}>✉️ ogrenciisleri@mersin.edu.tr</Text>
+          <Text style={styles.infoTitle}>Yüksekokul Sekreterlik</Text>
+          <Text style={styles.infoText}>📞 +90 324 515 6074 / 112</Text>
         </View>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>Bilgi İşlem</Text>
-          <Text style={styles.infoText}>📞 0324 521 00 02</Text>
-          <Text style={styles.infoText}>✉️ bilgiislem@mersin.edu.tr</Text>
+          <Text style={styles.infoTitle}>Yüksekokul Müdürlük</Text>
+          <Text style={styles.infoText}>📞 +90 324 324 515 6074-150</Text>
         </View>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>Acil Durum</Text>
-          <Text style={styles.infoText}>🚨 Güvenlik: 0324 521 00 99</Text>
-          <Text style={styles.infoText}>🏥 Sağlık: 0324 521 00 88</Text>
+          <Text style={styles.infoTitle}>KYK Yurt Müdürlüğü</Text>
+          <Text style={styles.infoText}>📞 0324 515 22 48</Text>
+          <Text style={styles.infoText}>
+            📍 Akdeniz Mah. Erenler Sk. No:60/A Erdemli/Mersin
+          </Text>
+        </View>
+
+        <View style={styles.infoCard}>
+          <Text style={styles.infoTitle}>Güvenlik</Text>
+          <Text style={styles.infoText}>
+            Yüksekokulumuzun güvenliği özel ve resmi görevliler tarafından
+            sağlanmaktadır.
+          </Text>
+          <Text style={styles.infoText}>
+            {'\n'}Herhangi bir güvenlik sorunu için yüksekokul yönetimine
+            başvurabilirsiniz.
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>

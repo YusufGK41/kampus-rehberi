@@ -1,27 +1,57 @@
 import React from 'react';
-import { ScrollView, View, Text } from 'react-native';
+import {
+  ScrollView,
+  View,
+  Text,
+  Linking,
+  TouchableOpacity,
+} from 'react-native';
 import { styles } from '../styles/styles';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function YemekhaneSayfasi({ navigation }: any) {
+  const openYemekhaneLink = () => {
+    Linking.openURL(
+      'https://mersin.edu.tr/idari/saglik-kultur-ve-spor-daire-baskanligi/hizmetlerimiz/kurum-yemekhane-hizmetleri',
+    );
+  };
+
   return (
     <SafeAreaView style={styles.pageContainer}>
       <ScrollView contentContainerStyle={styles.pageContent}>
-        <Text style={styles.pageTitle}>🍽️ Yemekhane Menüsü</Text>
+        <Text style={styles.pageTitle}>🍽️ Yemekhane</Text>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>Bugünkü Menü</Text>
-          <Text style={styles.infoText}>🥣 Çorba: Mercimek Çorbası</Text>
-          <Text style={styles.infoText}>🍗 Ana Yemek: Tavuk Sote</Text>
-          <Text style={styles.infoText}>🍚 Pilav: Bulgur Pilavı</Text>
-          <Text style={styles.infoText}>🥗 Salata: Mevsim Salatası</Text>
-          <Text style={styles.infoText}>🍮 Tatlı: Sütlaç</Text>
+          <Text style={styles.infoTitle}>Yemekhane Bilgileri</Text>
+          <Text style={styles.infoText}>
+            Yemekhane güncel menü ve ücretlendirme bilgileri üniversite web
+            sitesinde paylaşılmaktadır.
+          </Text>
         </View>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>Yemek Saatleri</Text>
-          <Text style={styles.infoText}>🕐 Öğle: 11:30 - 14:00</Text>
-          <Text style={styles.infoText}>🕐 Akşam: 17:00 - 19:30</Text>
+          <Text style={styles.infoTitle}>Ödeme Sistemi</Text>
+          <Text style={styles.infoText}>
+            Yeni sistem: Yapı Kredi ile anlaşma yapılmıştır.
+          </Text>
+          <Text style={styles.infoText}>
+            {'\n'}Eskiden öğrenci kartına yükleme yapılıyordu, yeni sistem için
+            detayları web sitesinden öğrenebilirsiniz.
+          </Text>
+        </View>
+
+        <View style={styles.infoCard}>
+          <Text style={styles.infoTitle}>Güncel Bilgiler İçin</Text>
+          <TouchableOpacity onPress={openYemekhaneLink}>
+            <Text
+              style={[
+                styles.infoText,
+                { color: '#3498db', textDecorationLine: 'underline' },
+              ]}
+            >
+              🔗 Yemekhane web sayfasını ziyaret edin
+            </Text>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </SafeAreaView>

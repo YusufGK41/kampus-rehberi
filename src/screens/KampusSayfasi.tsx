@@ -11,21 +11,40 @@ export default function KampusSayfasi({ navigation }: any) {
 
         <View style={styles.infoCard}>
           <Text style={styles.infoTitle}>
-            Mersin Üniversitesi Erdemli Kampüsü
+            Mersin Üniversitesi Erdemli Uygulamalı Teknoloji ve İşletmecilik
+            Yüksekokulu
           </Text>
           <Text style={styles.infoText}>
-            📍 Adres: Çaybaşı Mahallesi, 33730 Erdemli/Mersin
+            📍 Adres: Alata Mah. Alparslan Türkeş Bul. No:1 Erdemli/Mersin
           </Text>
-          <Text style={styles.infoText}>📞 Telefon: 0324 521 00 00</Text>
-          <Text style={styles.infoText}>🌐 Web: www.mersin.edu.tr</Text>
+          <Text style={styles.infoText}>
+            📞 Sekreterlik: +90 324 515 6074 / 112
+          </Text>
+          <Text style={styles.infoText}>
+            📞 Müdürlük: +90 324 324 515 6074-150
+          </Text>
         </View>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>Fakülteler</Text>
-          <Text style={styles.infoText}>• Fen Fakültesi</Text>
-          <Text style={styles.infoText}>• Mühendislik Fakültesi</Text>
+          <Text style={styles.infoTitle}>Bölümler</Text>
           <Text style={styles.infoText}>
-            • İktisadi ve İdari Bilimler Fakültesi
+            • Bilişim Sistemleri ve Teknolojileri (4 yıl)
+          </Text>
+          <Text style={styles.infoText}>
+            • Yönetim Bilişim Sistemleri (4 yıl)
+          </Text>
+          <Text style={styles.infoText}>• Turizm İşletmeciliği</Text>
+          <Text style={styles.infoText}>• Bankacılık ve Sigortacılık</Text>
+        </View>
+
+        <View style={styles.infoCard}>
+          <Text style={styles.infoTitle}>Hakkında</Text>
+          <Text style={styles.infoText}>
+            2005 yılında kurulan yüksekokulumuz, devlet üniversiteleri içinde
+            ilk yüksekokul olma özelliğine sahiptir.
+          </Text>
+          <Text style={styles.infoText}>
+            {'\n'}İlk mezunlarını 2010 yılında vermiştir.
           </Text>
         </View>
       </ScrollView>

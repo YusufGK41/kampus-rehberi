@@ -17,17 +17,38 @@ export default function SSSSayfasi({ navigation }: any) {
         </View>
 
         <View style={styles.infoCard}>
-          <Text style={styles.infoTitle}>
-            Yemekhane kartı nerede çıkarılır?
+          <Text style={styles.infoTitle}>Mersin33 kartı nerede çıkarılır?</Text>
+          <Text style={styles.infoText}>
+            Hükümet Konağı'nın önünde Mersin33 kartı çıkartabilirsiniz.
           </Text>
           <Text style={styles.infoText}>
-            Yemekhane girişindeki bürodan çıkarılır.
+            {'\n'}Bu kart ile toplu taşımada indirimli yararlanabilirsiniz.
+          </Text>
+        </View>
+
+        <View style={styles.infoCard}>
+          <Text style={styles.infoTitle}>Yemekhane kartı nasıl alınır?</Text>
+          <Text style={styles.infoText}>
+            Yeni sistem için Yapı Kredi ile anlaşma yapılmıştır. Detaylar için
+            yemekhane web sayfasını ziyaret edebilirsiniz.
           </Text>
         </View>
 
         <View style={styles.infoCard}>
           <Text style={styles.infoTitle}>Kampüste internet var mı?</Text>
-          <Text style={styles.infoText}>Evet, eduroam ağı mevcuttur.</Text>
+          <Text style={styles.infoText}>
+            Evet, eduroam ağı mevcuttur. Öğrenci bilgilerinizle
+            bağlanabilirsiniz.
+          </Text>
+        </View>
+
+        <View style={styles.infoCard}>
+          <Text style={styles.infoTitle}>Yurda nasıl başvurulur?</Text>
+          <Text style={styles.infoText}>
+            Başvurular e-devlet üzerinden yapılmaktadır. Yurda yerleşemeyen
+            öğrenciler 0324 515 22 48 numaralı telefondan yurt müdürlüğü ile
+            iletişime geçebilir.
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
